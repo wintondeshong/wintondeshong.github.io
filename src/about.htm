@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Content Copyright Winton DeShong -->
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            content="Copyright (c) 2021 Winton DeShong. All Rights Reserved."
+            name="copyright"
+        />
+        <meta
+            content="Expert Web Software Engineer - Creating rich user experiences that are compliant with all standards of the web."
+            name="description"
+        />
+        <meta content="Winton DeShong" name="author" />
+        <meta content="5 days" name="revisit-after" />
+        <meta content="initial-scale=1" name="viewport" />
+        <title>
+            Winton DeShong, Web Software Architect, Ruby on Rails, .NET MVC C#,
+            JavaScript, NodeJS, Flash/Flex, Rochester New York
+        </title>
+        <link href="favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" media="all" href="/assets/css/application.css" />
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+        <script src="/assets/javascripts/vendor/haml.debug.js"></script>
+        <script src="/assets/javascripts/vendor/retina.min.js"></script>
+        <script src="/assets/javascripts/namespaces.js"></script>
+        <script src="/assets/javascripts/lib/lodash_mixins.js"></script>
+        <script src="/assets/javascripts/lib/template_manager.js"></script>
+        <script src="/assets/javascripts/views/about_view.js"></script>
+        <script src="/assets/javascripts/application.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="body">
+                <h1>
+                    <a href="/" title="Home">Winton DeShong</a>
+                </h1>
+                <h3>Web Software Architect</h3>
+                <ul>
+                    <li>
+                        <a href="/about" title="About Winton">
+                            <span>&#43;</span>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact" title="Contact Winton">
+                            <span>&#43;</span>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="container">
+            <div id="application-shell"></div>
+            <div id="about-page">
+                <h2>About</h2>
+                <div class="column main">
+                    <div class="group">
+                        <h4>Work</h4>
+                        <ul>
+                            <li class="expandable expanded">
+                                <h5 class="employer">Andculture, Inc.</h5>
+                                <ul>
+                                    <li class="role">
+                                        Senior Technical Architect
+                                    </li>
+                                    <li class="location">Harrisburg, PA</li>
+                                    <li class="duration">
+                                        December 2014 - Present
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="expandable expanded">
+                                <h5 class="employer">Andculture, Inc.</h5>
+                                <ul>
+                                    <li class="role">Director of Technology</li>
+                                    <li class="location">Harrisburg, PA</li>
+                                    <li class="duration">
+                                        May 2014 - December 2014
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="expandable expanded">
+                                <h5 class="employer">Andculture, Inc.</h5>
+                                <ul>
+                                    <li class="role">Technical Architect</li>
+                                    <li class="location">Harrisburg, PA</li>
+                                    <li class="duration">
+                                        May 2008 - April 2014
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="expandable expanded">
+                                <h5 class="employer">Sposto Interactive</h5>
+                                <ul>
+                                    <li class="role">Lead Web Developer</li>
+                                    <li class="location">Kutztown, PA</li>
+                                    <li class="duration">
+                                        May 2006 - April 2008
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="group">
+                        <h4>Languages</h4>
+                        <ul>
+                            <li class="expanded expandable">
+                                <h5>JavaScript</h5>
+                                <ul>
+                                    <li>Angular</li>
+                                    <li>Backbone &amp; Marionette</li>
+                                    <li>CoffeeScript</li>
+                                    <li>Grunt &amp; Webpack</li>
+                                    <li>Handlebars</li>
+                                    <li>Jasmine, Mocha &amp; Chai</li>
+                                    <li>NodeJS</li>
+                                    <li>React</li>
+                                    <li>TypeScript</li>
+                                </ul>
+                            </li>
+                            <li class="expanded expandable">
+                                <h5>Ruby</h5>
+                                <ul>
+                                    <li>Capistrano</li>
+                                    <li>Capybara</li>
+                                    <li>Guard</li>
+                                    <li>Rails</li>
+                                    <li>RSpec</li>
+                                    <li>Sinatra</li>
+                                </ul>
+                            </li>
+                            <li class="expanded expandable">
+                                <h5>C#</h5>
+                                <ul>
+                                    <li>ASP.NET Core</li>
+                                    <li>ASP.NET MVC</li>
+                                    <li>Entity Framework</li>
+                                    <li>Moq</li>
+                                    <li>Ninject</li>
+                                    <li>NUnit &amp; XUnit</li>
+                                    <li>ReSharper</li>
+                                    <li>Shouldly</li>
+                                    <li>WebAPI</li>
+                                </ul>
+                            </li>
+                            <li class="expanded expandable">
+                                <h5>Golang</h5>
+                                <ul>
+                                    <li>Gin</li>
+                                    <li>GopherJS</li>
+                                    <li>Cobra</li>
+                                </ul>
+                            </li>
+                            <li class="expanded expandable">
+                                <h5>ActionScript</h5>
+                                <ul>
+                                    <li>AIR</li>
+                                    <li>Flash</li>
+                                    <li>Flex</li>
+                                    <li>PureMVC</li>
+                                </ul>
+                            </li>
+                            <li class="expanded expandable">
+                                <h5>PHP</h5>
+                                <ul>
+                                    <li>CodeIgniter</li>
+                                    <li>Seagull</li>
+                                    <li>Wordpress</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <h4>Web Development</h4>
+                        <ul>
+                            <li class="expanded expandable">
+                                <h5>HTML</h5>
+                                <ul>
+                                    <li>Haml</li>
+                                    <li>Razor</li>
+                                </ul>
+                            </li>
+                            <li class="expanded expandable">
+                                <h5>CSS</h5>
+                                <ul>
+                                    <li>Less</li>
+                                    <li>Sass</li>
+                                </ul>
+                            </li>
+                            <li class="expanded expandable">
+                                <h5>Web Services</h5>
+                                <ul>
+                                    <li>AMF</li>
+                                    <li>JSON</li>
+                                    <li>Web Sockets</li>
+                                    <li>XML</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <h4>Databases</h4>
+                        <ul>
+                            <li class="expanded">
+                                <h5>MSSQL</h5>
+                            </li>
+                            <li class="expanded">
+                                <h5>MySQL</h5>
+                            </li>
+                            <li class="expanded">
+                                <h5>PostgreSQL</h5>
+                            </li>
+                            <li class="expanded">
+                                <h5>SQLite</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="group">
+                        <h4>Mobile</h4>
+                        <ul>
+                            <li class="expanded">
+                                <h5>Cordova / PhoneGap</h5>
+                            </li>
+                            <li class="expanded">
+                                <h5>Xamarin</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <h4>Dev Ops</h4>
+                        <ul>
+                            <li class="expanded expandable">
+                                <h5>Cloud</h5>
+                                <ul>
+                                    <li>Amazon CloudFront</li>
+                                    <li>Amazon EC2</li>
+                                    <li>Amazon RDS</li>
+                                    <li>Amazon S3</li>
+                                    <li>Microsoft Azure</li>
+                                </ul>
+                            </li>
+                            <li class="expanded expandable">
+                                <h5>Continuous Integration</h5>
+                                <ul>
+                                    <li>Ant / NAnt</li>
+                                    <li>CruiseControl.NET</li>
+                                    <li>Hubot</li>
+                                    <li>Jenkins</li>
+                                    <li>Travis</li>
+                                </ul>
+                            </li>
+                            <li class="expanded expandable">
+                                <h5>Hosting</h5>
+                                <ul>
+                                    <li>Azure</li>
+                                    <li>Heroku</li>
+                                    <li>Rackspace</li>
+                                </ul>
+                            </li>
+                            <li class="expanded expandable">
+                                <h5>Source Control</h5>
+                                <ul>
+                                    <li>Git</li>
+                                    <li>SVN</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <h4>Software</h4>
+                        <ul>
+                            <li class="expanded">
+                                <h5>Adobe After Effects</h5>
+                            </li>
+                            <li class="expanded">
+                                <h5>Adobe Photoshop</h5>
+                            </li>
+                            <li class="expanded">
+                                <h5>Blender 3D</h5>
+                            </li>
+                            <li class="expanded">
+                                <h5>Eclipse</h5>
+                            </li>
+                            <li class="expanded">
+                                <h5>Emacs</h5>
+                            </li>
+                            <li class="expanded">
+                                <h5>Invision &amp; Inspect</h5>
+                            </li>
+                            <li class="expanded">
+                                <h5>Visual Studio &amp; VS Code</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                com.wintondeshong.app.application = new com.wintondeshong.App();
+            });
+        </script>
+    </body>
+</html>

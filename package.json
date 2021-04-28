@@ -1,0 +1,20 @@
+{
+    "name": "winton-deshong-portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.htm",
+    "scripts": {
+        "build": "npm run build-coffeescript && npm run build-sass",
+        "build-coffeescript": "coffee --compile --output src/assets/javascripts src/assets/coffeescripts",
+        "build-sass": "node-sass src/assets/scss/application.scss src/assets/css/application.css"
+    },
+    "author": "andculture <developer+code@andculture.com>",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "serve": "11.3.2"
+    },
+    "devDependencies": {
+        "coffeescript": "1.12.7",
+        "node-sass": "5.0.0"
+    }
+}

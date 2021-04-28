@@ -1,0 +1,9 @@
+{
+    "cleanUrls": true,
+    "public": "src",
+    "rewrites": [
+        { "source": "/", "destination": "index.htm" },
+        { "source": "/about", "destination": "about.htm" },
+        { "source": "/contact", "destination": "contact.htm" }
+    ]
+}
