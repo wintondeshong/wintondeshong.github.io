@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Content Copyright Winton DeShong -->
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            content="Copyright (c) 2021 Winton DeShong. All Rights Reserved."
+            name="copyright"
+        />
+        <meta
+            content="Expert Web Software Engineer - Creating rich user experiences that are compliant with all standards of the web."
+            name="description"
+        />
+        <meta content="Winton DeShong" name="author" />
+        <meta content="5 days" name="revisit-after" />
+        <meta content="initial-scale=1" name="viewport" />
+        <title>
+            Winton DeShong, Web Software Architect, Ruby on Rails, .NET MVC C#,
+            JavaScript, NodeJS, Flash/Flex, Rochester New York
+        </title>
+        <link href="favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" media="all" href="/assets/css/application.css" />
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+        <script src="/assets/javascripts/vendor/haml.debug.js"></script>
+        <script src="/assets/javascripts/vendor/retina.min.js"></script>
+        <script src="/assets/javascripts/namespaces.js"></script>
+        <script src="/assets/javascripts/lib/lodash_mixins.js"></script>
+        <script src="/assets/javascripts/lib/template_manager.js"></script>
+        <script src="/assets/javascripts/models/contact.js"></script>
+        <script src="/assets/javascripts/views/contact_view.js"></script>
+        <script src="/assets/javascripts/application.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="body">
+                <h1>
+                    <a href="/" title="Home">Winton DeShong</a>
+                </h1>
+                <h3>Web Software Architect</h3>
+                <ul>
+                    <li>
+                        <a href="/about" title="About Winton">
+                            <span>&#43;</span>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact" title="Contact Winton">
+                            <span>&#43;</span>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="container">
+            <div id="application-shell"></div>
+            <div id="contact-page"></div>
+            <script id="templateContact" type="text/haml-js-tmpl">
+                <h2>Contact</h2>
+                <form action="https://mailthis.to/contact@winton.me"
+                    encType="multipart/form-data"
+                    method="POST">
+                    <fieldset>
+                        <label for='name'>Name</label>
+                        <input id='name' name='name' type='text'>
+                    </fieldset>
+                    <fieldset>
+                        <label for='email'>Email</label>
+                        <input id='email' name='email' type='text'>
+                    </fieldset>
+                    <fieldset>
+                        <label for='message'>Comments</label>
+                        <textarea cols='30' id='message' name='message' rows='5'></textarea>
+                    </fieldset>
+                    <input id='submit-button' type='submit' value='Send'>
+                    <div id='success-message'>
+                        <span class='first-word'>Thank you!</span>
+                        I'll respond shortly.
+                    </div>
+                    <div id='validation-message'>
+                        <span class='first-word'>Highlighted</span>
+                        fields are
+                        <span class='last-word'>required.</span>
+                    </div>
+                    <input type="hidden" name="_confirmation" value="Thank you for reaching out. I'll get back to you shortly!" />
+                </form>
+            </script>
+        </div>
+        <script>
+            $(function () {
+                com.wintondeshong.app.application = new com.wintondeshong.App();
+            });
+        </script>
+    </body>
+</html>
