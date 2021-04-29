@@ -11,6 +11,7 @@
 - ```npm run build```
 - ```npm run build:coffeescript```
 - ```npm run build:sass```
+- ```npx serve```
 
 #### Deploying the project
 - ```npm run deploy```
