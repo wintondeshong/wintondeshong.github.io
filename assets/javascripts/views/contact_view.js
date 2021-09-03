@@ -41,7 +41,8 @@
     ContactView.prototype.events = {
       'blur input': '_handleChange',
       'keydown input': '_handleChange',
-      'keydown textarea': '_handleChange'
+      'keydown textarea': '_handleChange',
+      'click #submit-button': '_handleSaveSuccess'
     };
 
     ContactView.prototype.id = 'contact-view';
@@ -132,6 +133,7 @@
     };
 
     ContactView.prototype._handleSaveSuccess = function(model, response, options) {
+      this._hideSubmitButton();
       return this._showSuccessMessage();
     };
 
