@@ -14,6 +14,7 @@ class com.wintondeshong.views.ContactView extends Backbone.View
     'blur input':           '_handleChange'
     'keydown input':        '_handleChange'
     'keydown textarea':     '_handleChange'
+    'click #submit-button': '_handleSaveSuccess'
 
   id: 'contact-view'
 
@@ -104,5 +105,6 @@ class com.wintondeshong.views.ContactView extends Backbone.View
     @_showSubmitButton()
 
   _handleSaveSuccess: (model, response, options) =>
+    @_hideSubmitButton()
     @_showSuccessMessage()
 
