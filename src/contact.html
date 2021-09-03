@@ -62,9 +62,9 @@
             <div id="contact-page"></div>
             <script id="templateContact" type="text/haml-js-tmpl">
                 <h2>Contact</h2>
-                <form action="https://mailthis.to/contact@winton.me"
-                    encType="multipart/form-data"
-                    method="POST">
+                <form action="mailto:contact@winton.me"
+                    encType="text/plain"
+                    method="GET">
                     <fieldset>
                         <label for='name'>Name</label>
                         <input id='name' name='name' type='text'>
@@ -74,8 +74,8 @@
                         <input id='email' name='email' type='text'>
                     </fieldset>
                     <fieldset>
-                        <label for='message'>Comments</label>
-                        <textarea cols='30' id='message' name='message' rows='5'></textarea>
+                        <label for='body'>Comments</label>
+                        <textarea cols='30' id='body' name='body' rows='5'></textarea>
                     </fieldset>
                     <input id='submit-button' type='submit' value='Send'>
                     <div id='success-message'>
@@ -87,7 +87,6 @@
                         fields are
                         <span class='last-word'>required.</span>
                     </div>
-                    <input type="hidden" name="_confirmation" value="Thank you for reaching out. I'll get back to you shortly!" />
                 </form>
             </script>
         </div>
