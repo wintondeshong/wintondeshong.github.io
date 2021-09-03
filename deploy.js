@@ -1,5 +1,1 @@
-var ghpages = require('gh-pages');
-
-ghpages.publish('src', () => {
-    console.log("Deployed");
-});
+require('gh-pages').publish('src', () => console.log("Deployed"));
