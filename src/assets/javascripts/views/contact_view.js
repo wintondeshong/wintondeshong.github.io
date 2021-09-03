@@ -134,7 +134,6 @@
 
     ContactView.prototype._handleSaveSuccess = function(model, response, options) {
       this._hideSubmitButton();
-      this._hideValidationMessage();
       return this._showSuccessMessage();
     };
 
